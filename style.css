@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    background: blue;
+}
+
+#headerSection {
+    position: sticky;
+    top: 0;
+}
+
+#headerSection.sticky-active {
+    background: white;
+}
+
+#logo_div {
+    height: 25px;
+    margin-left: 4rem;
+}
+
+#mainDiv {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBarItems {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: center;
+}
+
+#navBarItems li {
+    padding: 1rem;
+    background: blue;
+    margin: 0.5rem;
+    color: white;
+}
+
+#navBarItems li:hover {
+    background: red;
+}
+
+#mainDiv button {
+    padding: 1rem;
+    border-radius: 10rem;
+    border-style: none;
+    background: rgb(248, 249, 252);
+    outline: none;
+    margin-right: 4rem;
+}
+
+#mainDiv button:hover {
+    background: rgb(221, 226, 241);
+    transition: linear 300ms;
+}
+
+#futureSection {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#futureSection h1 {
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+#futureSection h1 span {
+    font-size: 3rem;
+}
+
+#futureSection #integration {
+    padding: 0.4rem;
+    background: rgb(46, 202, 139);
+    color: white;
+    border-style: none;
+    outline: none;
+    border-radius: 10rem;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    letter-spacing: 1.5px;
+}
+
+#futureSection p {
+    font: "Nunito", sans-serif;
+    line-height: 1.5rem;
+}
+
+#textInput {
+    padding: 1.2rem;
+    background: rgb(223, 229, 248);
+    /* justify-content: space-around; */
+    border-radius: 10rem;
+    display: inline;
+}
+
+#textInput #getStarted {
+    height: 3rem;
+    /* width: 9rem; */
+    padding: 1rem;
+    align-items: center;
+    background: rgb(47, 85, 212);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    border-radius: 10rem;
+    color: white;
+}
+
+#textInput button:hover {
+    background: rgb(32, 60, 153);
+    transition: linear 200ms;
+}
+
+#textInput input {
+    /* height: 2.5rem; */
+    outline: none;
+    border-style: none;
+    /* width: 27rem; */
+    background: rgb(223, 229, 248);
+    width: 30rem;
+    font-size: 1.1rem;
+    flex: 1;
+    margin-top: 3rem;
+}
+
+#futureSection img {
+    /* height: 50rem; */
+    width: 45rem;
+    margin-top: 80px;
+}
+
+#companyLogos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9rem;
+    padding: 2rem;
+}
+
+#companyLogos img {
+    width: 5rem;
+}
+
+#triangle {
+    width: 99%;
+    height: 20rem;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.5%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#hero-image {
+    position: relative;
+}
+
+#boxSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+#boxSection div {
+    /* padding: 10rem; */
+    border: 1px solid rgb(245, 245, 246);
+    box-shadow: 0px 0px 1px 1px #f0efef;
+    padding: 1.2rem;
+    margin: 1rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    color: rgb(132, 152, 193);
+}
+
+#boxSection div h2 {
+    margin-bottom: 1rem;
+    color: rgb(60, 72, 88);
+    font-weight: lighter;
+}
+
+#exploreFeatures {
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: blue;
+    margin: 5rem;
+    font-family: "Nunito", sans-serif;
+    margin: 6rem;
+}
+
+#integrateSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+#integrateSection #leftPart {
+    /* min-width: 3rem; */
+    margin-left: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+#integrateSection #rightPart {
+    flex: 1;
+    margin-left: 5rem;
+}
+
+
+/* 
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    #integrateSection {
+        flex-direction: column;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    #integrateSection #leftPart {
+        flex: 1;
+    }
+    #integrateSection #rightPart {
+        flex: 1;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    #integrateSection #leftPart {
+        flex: 0.7;
+    }
+    #integrateSection #rightPart {
+        flex: 1;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+#integrateSection #rightPart h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#integrateSection #rightPart article h2 {
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#integrateSection #rightPart article p {
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(132, 146, 168);
+    margin-left: 2rem;
+}
+
+#integrateSection #rightPart article h2 i {
+    color: blue;
+}
+
+
+/* #hoverSection {
+            display: flex;
+        }
+        
+        #hoverSection ol {
+            justify-content: space-between;
+            list-style: none;
+            margin: 0 10rem;
+            padding-top: 4rem;
+        }
+        
+     */
+
+#hoverSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+    padding-bottom: 5rem;
+}
+
+#hoverSection .hoverContainer div img {
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.hoverContainer {
+    display: flex;
+    border: 1px solid rgb(221, 221, 223);
+    padding: 1rem;
+    width: 20%;
+    outline: none;
+}
+
+.hoverContainer:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 8px 2px #c5c1c1;
+    transition: linear 400ms;
+    transform: scale(1.05);
+}
+
+#deliverSection {
+    display: flex;
+    margin: 0 6rem;
+    margin-bottom: 7rem;
+}
+
+#deliverSection #deliverLeftSide h2 {
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#deliverSection #deliverLeftSide #para {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(132, 146, 168);
+}
+
+#deliverSection #deliverLeftSide #bullets p {
+    color: rgb(132, 146, 168);
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#deliverSection #deliverLeftSide #bullets {
+    margin-bottom: 2rem;
+}
+
+#deliverSection #deliverLeftSide #bullets p i {
+    color: blue;
+    margin-right: 0.8rem;
+}
+
+#deliverSection #deliverRightSide img {
+    width: 30rem;
+    margin-left: 7rem;
+}
+
+#deliverSection #readMoreButton {
+    padding: 0.8rem;
+    width: 9rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    outline: none;
+    background: rgb(47, 85, 212);
+    color: white;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#deliverSection #readMoreButton:hover {
+    background: rgb(32, 70, 194);
+    transition: linear 200ms;
+}
+
+#lastSection {
+    background: rgb(32, 41, 66);
+}
+
+#downloadSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8rem;
+}
+
+#downloadLeftSide {
+    display: flex;
+    color: white;
+    margin-top: 4rem;
+}
+
+#downloadLeftSide #downloadText h1 {
+    margin-bottom: 1rem;
+}
+
+#downloadLeftSide #downloadText h1,
+p {
+    font-family: "Nunito", sans-serif;
+}
+
+#downloadSection #downloadText {
+    margin-bottom: 4rem;
+}
+
+#downloadLeftSide #mobileIcon i {
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+#downloadRightSide {
+    margin-top: 4rem;
+}
+
+#downloadRightSide button {
+    padding: 0.8rem;
+    width: 9rem;
+    margin: 0 0.5rem;
+    outline: none;
+    border-style: none;
+    border-radius: 0.5rem;
+}
+
+#downloadRightSide button i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+#downloadRightSide #appStore {
+    background: rgb(47, 85, 212);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 1px 4px 1px rgb(141, 141, 236);
+    cursor: pointer;
+}
+
+#downloadRightSide #appStore:hover {
+    background: rgb(27, 66, 194);
+    transition: linear 200ms;
+}
+
+#downloadRightSide #playStore {
+    background: rgb(32, 44, 81);
+    color: rgb(37, 76, 212);
+    font-size: 1rem;
+    font-weight: lighter;
+    box-shadow: 0px 0.8px 4px 0.5px rgb(141, 141, 236);
+    cursor: pointer;
+}
+
+#downloadRightSide #playStore:hover {
+    background: rgb(44, 79, 192);
+    transition: linear 200ms;
+    color: white;
+}
+
+#footerSection {
+    background: rgb(32, 41, 66);
+    border-top: 1px solid rgb(48, 62, 99);
+}
+
+#footerContainer {
+    /* margin-top: 7rem; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+    padding-bottom: 4rem;
+    padding: 0 5rem;
+}
+
+#footerContainer #landrick p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#footerContainer #landrick img {
+    width: 10rem;
+}
+
+#footerContainer #landrick #socialMedia i {
+    padding: 3px;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+#footerContainer #company h1,
+li {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 2.3rem;
+}
+
+#footerContainer i {
+    margin-right: 0.5rem;
+}
+
+#usefulLinks h1,
+li {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 2.3rem;
+}
+
+#newsLetter h1,
+p {
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+    line-height: 2.3rem;
+}
+
+#newsLetter #signUpText {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#newsLetter input {
+    width: 14rem;
+    outline: none;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgb(39, 49, 79);
+    color: white;
+}
+
+#newsLetter button {
+    background: rgb(32, 44, 81);
+    color: rgb(37, 76, 212);
+    font-weight: lighter;
+    box-shadow: 0px 0.8px 2px 0.2px rgb(141, 141, 236);
+    cursor: pointer;
+    width: 16rem;
+    outline: none;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+
+#newsLetter button:hover {
+    background: rgb(44, 79, 192);
+    transition: linear 200ms;
+    color: white;
+}
+
+#creatorSection {
+    background: rgb(32, 41, 66);
+    padding: 3rem;
+    border-top: 1px solid rgb(48, 62, 99);
+}
+
+#creatorSection #copyright {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: lighter;
+}
+
+#creatorSection #copyright i {
+    color: rgb(224, 48, 48);
+}
+
+#creatorSection #payment img {
+    width: 3rem;
+}
+
+#creatorSection {
+    display: flex;
+    justify-content: space-between;
+}
